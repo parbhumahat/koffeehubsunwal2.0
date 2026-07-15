@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Craft Menu | Koffee HUB Sunwal</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="images/icon.svg">
+</head>
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header id="header">
+    <nav class="navbar" id="navbar">
+      <a href="/index.html" class="nav-brand">
+        <img src="/images/logo.png" alt="Koffee HUB Sunwal Logo" class="nav-logo-img">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/menu.html" class="nav-link active">Menu</a></li>
+        <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="/courses.html" class="nav-link">Courses</a></li>
+        <li><a href="/experience.html" class="nav-link">Journey</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/contact.html" class="nav-cta">Book</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+  <!-- Menu Hero -->
+  <section class="about-hero">
+    <div class="about-hero-bg" style="background-image: url('https://pullandpourcoffee.com/wp-content/uploads/2023/08/espresso-machine.jpg.webp');"></div>
+    <div class="hero-overlay"></div>
+    <div class="about-hero-content">
+      <div class="hero-mini-title">The Culinary Catalog</div>
+      <h1 class="about-hero-title">Exclusive Coffee Crafts</h1>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Search and Filter Workspace -->
+  <section class="section reveal-on-scroll">
+    <div class="menu-controls">
+      <!-- Live Search Box -->
+      <div class="search-box-wrapper">
+        <svg class="search-icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="menuSearch" class="menu-search-input" placeholder="Search craft menu by items or taste notes...">
+      </div>
+
+      <!-- Categories capsules buttons -->
+      <div class="category-capsules">
+        <button class="capsule-btn active" data-filter="all">All Crafts</button>
+        <button class="capsule-btn" data-filter="espresso">Espresso</button>
+        <button class="capsule-btn" data-filter="cappuccino">Cappuccino</button>
+        <button class="capsule-btn" data-filter="latte">Latte</button>
+        <button class="capsule-btn" data-filter="mocha">Mocha</button>
+        <button class="capsule-btn" data-filter="cold">Cold Coffee</button>
+        <button class="capsule-btn" data-filter="signature">Signatures</button>
+        <button class="capsule-btn" data-filter="desserts">Desserts</button>
+        <button class="capsule-btn" data-filter="snacks">Gourmet Snacks</button>
+      </div>
+    </div>
+
+    <!-- Menu Cards Container -->
+    <div class="menu-items-grid">
+      
+      <!-- ITEM: ESPRESSO -->
+      <div class="menu-item-card" data-category="espresso">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1510972527409-cef190317417?q=80&w=200&auto=format&fit=crop" alt="Espresso Card" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Classic Espresso</h3>
+              <span class="menu-item-badge">Double Shot</span>
+            </div>
+            <span class="menu-item-price">Rs.150</span>
+          </div>
+          <p class="menu-item-desc">A concentrated intense extraction with rich hazelnut-colored crema and complex dark cocoa undertones.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: CAPPUCCINO -->
+      <div class="menu-item-card" data-category="cappuccino">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53f?q=80&w=200&auto=format&fit=crop" alt="Cappuccino Card" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Sunwal Royal Cappuccino</h3>
+              <span class="menu-item-badge">Classy Brew</span>
+            </div>
+            <span class="menu-item-price">Rs.220</span>
+          </div>
+          <p class="menu-item-desc">Artisanal 1:1 ratio of flawless espresso with velvety micro-foam, dusted with supreme chocolate shavings.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: LATTE -->
+      <div class="menu-item-card" data-category="latte">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=200&auto=format&fit=crop" alt="Latte Card" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Rose Bud Latte</h3>
+              <span class="menu-item-badge">Chef's Choice</span>
+            </div>
+            <span class="menu-item-price">Rs.240</span>
+          </div>
+          <p class="menu-item-desc">Premium double espresso harmonized with textured milk, delicately infused with organic local rose petal extract.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: MOCHA -->
+      <div class="menu-item-card" data-category="mocha">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?q=80&w=200&auto=format&fit=crop" alt="Mocha Card" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Dark Forest Mocha</h3>
+              <span class="menu-item-badge">Rich Cocoa</span>
+            </div>
+            <span class="menu-item-price">Rs.260</span>
+          </div>
+          <p class="menu-item-desc">Layers of rich Single-Origin espresso, melted Belgian dark chocolate, and silky micro-foam topped with cream.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: COLD COFFEE -->
+      <div class="menu-item-card" data-category="cold">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=200&auto=format&fit=crop" alt="Cold Brew Card" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Midnight Cold Drip</h3>
+              <span class="menu-item-badge">Slow Extract</span>
+            </div>
+            <span class="menu-item-price">Rs.280</span>
+          </div>
+          <p class="menu-item-desc">Extensively brewed over 18 hours using ice crystal chambers, leaving a light syrup notes of dried orange peel.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: COLD COFFEE -->
+      <div class="menu-item-card" data-category="cold">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=200&auto=format&fit=crop" alt="Ice Frappe" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Salted Caramel Frappe</h3>
+              <span class="menu-item-badge">Blended</span>
+            </div>
+            <span class="menu-item-price">Rs.290</span>
+          </div>
+          <p class="menu-item-desc">Blended luxury single-origin espresso with French salted caramel cream, whole milk, and crushed cold crystals.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: SIGNATURE -->
+      <div class="menu-item-card" data-category="signature">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=200&auto=format&fit=crop" alt="Signature" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Crest Gold Pour Over</h3>
+              <span class="menu-item-badge">V60 Precision</span>
+            </div>
+            <span class="menu-item-price">Rs.310</span>
+          </div>
+          <p class="menu-item-desc">Bespoke filter coffee using precision V60 dripper methods, revealing subtle organic jasmine and sweet citrus notes.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: DESSERTS -->
+      <div class="menu-item-card" data-category="desserts">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=200&auto=format&fit=crop" alt="Desserts Macarons" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Parisian Macaron Platter</h3>
+              <span class="menu-item-badge">Fresh Baked</span>
+            </div>
+            <span class="menu-item-price">Rs.250</span>
+          </div>
+          <p class="menu-item-desc">Three crispy, melt-in-the-mouth almond macarons with custom pistachio, hazelnut, and espresso fillings.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: DESSERTS -->
+      <div class="menu-item-card" data-category="desserts">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=200&auto=format&fit=crop" alt="Desserts Melt cake" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Cocoa Lava Fondant</h3>
+              <span class="menu-item-badge">Warm Delight</span>
+            </div>
+            <span class="menu-item-price">Rs.290</span>
+          </div>
+          <p class="menu-item-desc">Warm roasted chocolate pudding cake with a molten premium dark cocoa core, served with organic vanilla gelato.</p>
+        </div>
+      </div>
+
+      <!-- ITEM: SNACKS -->
+      <div class="menu-item-card" data-category="snacks">
+        <div class="menu-item-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=200&auto=format&fit=crop" alt="Snacks Croissant" class="menu-item-img" referrerPolicy="no-referrer">
+        </div>
+        <div class="menu-item-details">
+          <div class="menu-item-header">
+            <div>
+              <h3 class="menu-item-title">Buttery Flaky Croissant</h3>
+              <span class="menu-item-badge">Warm baked</span>
+            </div>
+            <span class="menu-item-price">Rs.180</span>
+          </div>
+          <p class="menu-item-desc">A traditional French laminated pastry with hundreds of paper-thin layers of genuine grass-fed butter.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Empty Results Template -->
+    <div class="menu-no-results">
+       No coffee combinations found matching those descriptors. Try searching "latte" or "cappuccino".
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer>
+    <div class="footer-layout">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col-desc">
+        <div class="footer-logo-row">
+          <a href="#">
+          <img src="/images/logo.png" alt="Koffee HUB Sunwal" class="footer-logo-img">
+          </a>
+          X 
+          <img src="images/coffeoclocklogo.png" alt="Koffee HUB Sunwal" class="footer-logo-img2">
+        </div>
+        <p class="footer-brand-p">Creating luxury second-home environments, marrying single-origin precision brewing with world-class spatial comfort.</p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div>
+        <h3 class="footer-heading">Navigations</h3>
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Story</a></li>
+          <li><a href="/menu.html">Craft Catalog</a></li>
+          <li><a href="/gallery.html">Visual Gallery</a></li>
+          <li><a href="/experience.html">The Coffee Journey</a></li>
+          <li><a href="/courses.html">Courses Academy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Social & Communities -->
+      <div>
+        <h3 class="footer-heading">Connect With Us</h3>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/p/Koffee-HUB-Sunwal-100027303412881/" target="_blank">Facebook Space</a></li>
+          <li><a href="https://www.instagram.com/koffeehubsunwal/" target="_blank">Instagram Visuals</a></li>
+          <li><a href="https://maps.app.goo.gl/vTeox2EkM3HHREE3A" target="_blank">Google Pin Spot</a></li>
+          <li><a href="mailto:koffeehub4@gmail.com">E-mail </a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Opening Hours -->
+      <div>
+        <h3 class="footer-heading">Bespoke Hours</h3>
+        <ul class="hours-list">
+          <li class="hours-item">
+            <span>Sunday – Friday</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span>Saturdays</span>
+            <span>7:00 AM – 10:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span>Public Holidays</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Copyright row -->
+    <div class="footer-bottom">
+      <div>&copy; 2026 Koffee HUB Sunwal. Made with ❤ by <a href="https:parbhumahatchhetry.com.np" style="text-decoration: none; color: whitesmoke;">Parbhu Mahat Xhetri.</a></div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script type="module" src="/js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Koffee Hub Sunwal Courses",
+  "description": "A premium, fully responsive Courses page for Koffee Hub Sunwal, featuring professional barista and cafe management training.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

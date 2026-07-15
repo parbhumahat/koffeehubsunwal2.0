@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Coffee Gallery | Koffee HUB Sunwal</title>
+  <link class="styles" rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="images/icon.svg">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header">
+    <nav class="navbar" id="navbar">
+      <a href="/index.html" class="nav-brand">
+        <img src="/images/logo.png" alt="Koffee HUB Sunwal Logo" class="nav-logo-img">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/menu/" class="nav-link">Menu</a></li>
+        <li><a href="/gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="/courses.html" class="nav-link">Courses</a></li>
+        <li><a href="/experience.html" class="nav-link">Journey</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/contact.html" class="nav-cta">Book</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="about-hero">
+    <div class="about-hero-bg" style="background-image: url('/images/interior.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="about-hero-content">
+      <div class="hero-mini-title">The Art Exhibition</div>
+      <h1 class="about-hero-title">Visual Indulgence</h1>
+    </div>
+  </section>
+
+  <!-- Masonry Gallery Layout -->
+  <section class="section reveal-on-scroll">
+    <div class="sec-header">
+      <span class="sec-subtitle">Artisan Showcase</span>
+      <h2 class="sec-title">Spaces, Beans & Craft</h2>
+    </div>
+
+    <div class="gallery-layout">
+      <!-- Item 1 -->
+      <div class="gallery-item">
+        <img src="/images/hero_bg.jpg" alt="Espresso Shot Extraction" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Artisanal Coffee</span>
+          <h3 class="gallery-title">Crumb Crema Pour</h3>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" alt="Premium Latte Art" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Pouring Secrets</span>
+          <h3 class="gallery-title">Velvet Rosetta Art</h3>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item">
+        <img src="/images/interior.jpg" alt="Sublime space interior" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Interior Design</span>
+          <h3 class="gallery-title">The Gold Lounge Space</h3>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item">
+        <img src="/images/beans.jpg" alt="Beautiful Roasted beans spill" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Fresh Roasts</span>
+          <h3 class="gallery-title">Altitudinal Arabica Glow</h3>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=600&auto=format&fit=crop" alt="Barista behind tools" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Behind the Scenes</span>
+          <h3 class="gallery-title">Barista Precision Weighting</h3>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600&auto=format&fit=crop" alt="Sunwal Community social hours" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Sunwal Community</span>
+          <h3 class="gallery-title">Laughter, Ideas & Sips</h3>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600&auto=format&fit=crop" alt="Sweet selection gourmet pastry" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Desserts Selection</span>
+          <h3 class="gallery-title">Delicate Almond Macarons</h3>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600&auto=format&fit=crop" alt="Gold crest drip pour coffee" referrerPolicy="no-referrer">
+        <div class="gallery-info-overlay">
+          <span class="gallery-tag">Artisanal Coffee</span>
+          <h3 class="gallery-title">Slow Convection Extraction</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Lightbox Slideshow Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-btn-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    
+    <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    
+    <div class="lightbox-content">
+      <img src="" alt="Active Lightbox Frame" id="lightboxImg">
+      <div class="lightbox-caption-box">
+        <h3 class="lightbox-title" id="lightboxTitle">Frame Title</h3>
+        <p class="lightbox-desc" id="lightboxDesc">Frame Subtag</p>
+      </div>
+    </div>
+    
+    <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" aria-label="Next Image">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <!-- Footer -->
+<footer>
+    <div class="footer-layout">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col-desc">
+        <div class="footer-logo-row">
+          <a href="#">
+          <img src="/images/logo.png" alt="Koffee HUB Sunwal" class="footer-logo-img">
+          </a>
+          X 
+          <img src="images/coffeoclocklogo.png" alt="Koffee HUB Sunwal" class="footer-logo-img2">
+        </div>
+        <p class="footer-brand-p">Creating luxury second-home environments, marrying single-origin precision brewing with world-class spatial comfort.</p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div>
+        <h3 class="footer-heading">Navigations</h3>
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Story</a></li>
+          <li><a href="/menu/">Craft Catalog</a></li>
+          <li><a href="/gallery.html">Visual Gallery</a></li>
+          <li><a href="/experience.html">The Coffee Journey</a></li>
+          <li><a href="/courses.html">Courses Academy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Social & Communities -->
+      <div>
+        <h3 class="footer-heading">Connect With Us</h3>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/p/Koffee-HUB-Sunwal-100027303412881/" target="_blank">Facebook Space</a></li>
+          <li><a href="https://www.instagram.com/koffeehubsunwal/" target="_blank">Instagram Visuals</a></li>
+          <li><a href="https://maps.app.goo.gl/vTeox2EkM3HHREE3A" target="_blank">Google Pin Spot</a></li>
+          <li><a href="mailto:koffeehub4@gmail.com">E-mail </a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Opening Hours -->
+      <div>
+        <h3 class="footer-heading">Bespoke Hours</h3>
+        <ul class="hours-list">
+          <li class="hours-item">
+            <span>Sunday – Friday</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span>Saturdays</span>
+            <span>7:00 AM – 10:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span>Public Holidays</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Copyright row -->
+    <div class="footer-bottom">
+      <div>&copy; 2026 Koffee HUB Sunwal. Made with ❤ by <a href="https://parbhumahatchhetry.com.np" style="text-decoration: none; color: whitesmoke;">Prabhu.</a></div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script type="module" src="/js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barista & Coffee Training Courses | Koffee HUB Sunwal</title>
+  <!-- Google Fonts: Inter for UI & Playfair Display for Editorial Coffee Elegance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/courses.css">
+  <link rel="icon" href="/images/icon.svg">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header id="header">
+    <nav class="navbar" id="navbar">
+      <a href="/index.html" class="nav-brand">
+        <img src="/images/logo.png" alt="Koffee HUB Sunwal Logo" class="nav-logo-img">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/menu.html" class="nav-link">Menu</a></li>
+        <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="/courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="/experience.html" class="nav-link">Journey</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/contact.html" class="nav-cta">Book</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content-container">
+      <div class="hero-badge fade-in">Barista & Coffee Training Academy</div>
+      <p class="hero-subtitle slide-up">Professional Coffee & Barista Training Center in Sunwal. Acquire authentic, industry-standard brewing craft, espresso extraction expertise, and cafe management skills.</p>
+      <div class="hero-buttons slide-up">
+        <a href="#courses" class="btn btn-primary btn-lg ripple-effect" id="heroBtn1">Explore Courses</a>
+        <a href="contact.html" class="btn btn-outline btn-lg ripple-effect" id="heroBtn2">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Koffee Hub Sunwal -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="grid-2-col">
+        <!-- About Text Info -->
+        <div class="about-info-panel">
+          <span class="section-badge">Barista Excellence</span>
+          <h2 class="section-title text-left">Who Are We ? </h2>
+          <p class="about-description">
+            Koffee Hub Sunwal is one of the leading coffee and barista training centers dedicated to providing practical coffee education. We focus on professional barista skills, café management, customer service, and entrepreneurship. Our experienced trainers and hands-on learning environment help students become industry-ready professionals.
+          </p>
+          <p class="about-description-secondary">
+            Whether you are an aspiring barista looking to build an international career, an entrepreneur planning to launch a unique cafe concept, or a coffee enthusiast seeking to master domestic brewing, we offer specialized hands-on modules designed just for you.
+          </p>
+
+          <!-- Highlight Cards Grid -->
+          <div class="about-highlights-grid">
+            <div class="highlight-mini-card">
+              <i data-lucide="award" class="highlight-icon"></i>
+              <span class="highlight-label">Certified Training</span>
+            </div>
+            <div class="highlight-mini-card">
+              <i data-lucide="users" class="highlight-icon"></i>
+              <span class="highlight-label">Professional Trainers</span>
+            </div>
+            <div class="highlight-mini-card">
+              <i data-lucide="coffee" class="highlight-icon"></i>
+              <span class="highlight-label">Modern Equipment</span>
+            </div>
+            <div class="highlight-mini-card">
+              <i data-lucide="zap" class="highlight-icon"></i>
+              <span class="highlight-label">Hands-on Practice</span>
+            </div>
+            <div class="highlight-mini-card">
+              <i data-lucide="heart" class="highlight-icon"></i>
+              <span class="highlight-label">Friendly Environment</span>
+            </div>
+            <div class="highlight-mini-card">
+              <i data-lucide="briefcase" class="highlight-icon"></i>
+              <span class="highlight-label">Career Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Visual Collage/Video Placeholder -->
+        <div class="about-visual-panel">
+          <div class="main-visual-wrapper">
+            <img src="images/practial.jpg" alt="Barista training at Koffee Hub Sunwal" class="about-main-img">
+            <div class="visual-accent-badge">
+              <span class="accent-number" id="experienceCount">100%</span>
+              <span class="accent-label">Practical Focus</span>
+            </div>
+          </div>
+          <div class="visual-decor-box"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Classes Section -->
+  <section class="courses-section" id="courses">
+    <div class="section-container">
+      <div class="text-center-wrapper">
+        <span class="section-badge">Academic Programs</span>
+        <h2 class="section-title">Our Premium Barista Classes</h2>
+        <p class="section-subtitle">Select from our expert-crafted coffee curriculum. From introductory espresso modules to professional brewing certifications.</p>
+      </div>
+
+      <!-- Course Cards Container -->
+      <div class="courses-grid" id="coursesGrid">
+        
+        <!-- Course Card 1: Basic Barista Course -->
+        <div class="course-card card-lift" data-course-id="basic-barista">
+          <div class="course-image-wrapper">
+            <img src="images/lucky.jpg" alt="Basic Barista Course" class="course-img">
+            <span class="course-level-badge level-beginner">Beginner</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-duration"><i data-lucide="calendar"></i> 20 Days</span>
+              <span class="course-price-tag">Contact Us</span>
+            </div>
+            <h3 class="course-name">Basic Barista Course</h3>
+            <p class="course-short-desc">Perfect for beginners wanting to learn fundamental coffee concepts and essential espresso operations over an extensive 20-day practical curriculum.</p>
+            
+            <button class="btn btn-outline-primary btn-full view-course-btn" data-target="basic-barista">View Course</button>
+          </div>
+        </div>
+
+        <!-- Course Card 2: Special Advance Barista Course -->
+        <div class="course-card card-lift" data-course-id="special-advance-barista">
+          <div class="course-image-wrapper">
+            <span class="course-sticker-badge sticker-popular">Most Popular</span>
+            <img src="images/kazol.jpg" alt="Special Advance Barista Course" class="course-img">
+            <span class="course-level-badge level-intermediate">Intermediate</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-duration"><i data-lucide="calendar"></i> 45 Days</span>
+              <span class="course-price-tag">Contact Us</span>
+            </div>
+            <h3 class="course-name">Special Advance Barista Course</h3>
+            <p class="course-short-desc">The ultimate 45-day program to master elite brewing, advanced latte art, cafe operations, and customer experience. Labelled as our Most Popular choice!</p>
+            
+            <button class="btn btn-outline-primary btn-full view-course-btn" data-target="special-advance-barista">View Course</button>
+          </div>
+        </div>
+
+        <!-- Course Card 3: AHA Prof. Diploma in Excellence Course -->
+        <div class="course-card card-lift" data-course-id="diploma-excellence">
+          <div class="course-image-wrapper">
+            <span class="course-sticker-badge sticker-valuable">Most Valuable</span>
+            <img src="images/card4.jpg" alt="AHA Prof. Diploma in Excellence Course" class="course-img">
+            <span class="course-level-badge level-advanced">Diploma</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-duration"><i data-lucide="calendar"></i> 3 Months</span>
+              <span class="course-price-tag">Contact Us</span>
+            </div>
+            <h3 class="course-name">AHA Prof. Diploma in Excellence</h3>
+            <p class="course-short-desc">An elite 3-month hospitality and coffee operations diploma offering a salaried internship in outer countries! Terms and conditions apply.</p>
+            
+            <button class="btn btn-outline-primary btn-full view-course-btn" data-target="diploma-excellence">View Course</button>
+          </div>
+        </div>
+
+        <!-- Course Card 4: Latte Art Training Course -->
+        <div class="course-card card-lift" data-course-id="latte-art">
+          <div class="course-image-wrapper">
+            <img src="images/card2.jpg" alt="Latte Art Training Course" class="course-img">
+            <span class="course-level-badge level-expert">Specialist</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-duration"><i data-lucide="calendar"></i> 7 Days</span>
+              <span class="course-price-tag">Contact Us</span>
+            </div>
+            <h3 class="course-name">Latte Art Training Course</h3>
+            <p class="course-short-desc">A dedicated 7-day intensive hands-on course to master milk texturing and pour beautiful symmetrical latte art patterns.</p>
+            
+            <button class="btn btn-outline-primary btn-full view-course-btn" data-target="latte-art">View Course</button>
+          </div>
+        </div>
+
+        <!-- Course Card 5: Customize Course Barista Training -->
+        <div class="course-card card-lift" data-course-id="customize-barista">
+          <div class="course-image-wrapper">
+            <img src="images/card5.jpg" class="course-img">
+            <span class="course-level-badge level-beginner">Tailored</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-duration"><i data-lucide="calendar"></i> Flexible</span>
+              <span class="course-price-tag">Contact Us</span>
+            </div>
+            <h3 class="course-name">Customize Barista Training</h3>
+            <p class="course-short-desc">Build your own customized barista training syllabus on flexible dates to suit your specific goals. Terms & Conditions apply.</p>
+            
+            <button class="btn btn-outline-primary btn-full view-course-btn" data-target="customize-barista">View Course</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us-section" id="why-choose-us">
+    <div class="section-container">
+      <div class="text-center-wrapper">
+        <span class="section-badge">Why Koffee Hub Sunwal</span>
+        <h2 class="section-title">The Ideal Barista Academy</h2>
+        <p class="section-subtitle">We don't just teach coffee; we build professional careers and sustainable business operators.</p>
+      </div>
+
+      <div class="why-us-grid">
+        <!-- 1 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="award"></i>
+          </div>
+          <h3 class="why-card-title">Professional Trainers</h3>
+          <p class="why-card-desc">Learn from highly experienced, certified head baristas with years of commercial expertise.</p>
+        </div>
+        <!-- 2 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3 class="why-card-title">100% Practical Training</h3>
+          <p class="why-card-desc">Maximum practical hours. You spend your training hours on the machine, extracting espresso and steaming milk.</p>
+        </div>
+        <!-- 3 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="coffee"></i>
+          </div>
+          <h3 class="why-card-title">Modern Coffee Equipment</h3>
+          <p class="why-card-desc">Practice on premium commercial espresso machines, smart grinders, and professional brewing gear.</p>
+        </div>
+        <!-- 4 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="user-check"></i>
+          </div>
+          <h3 class="why-card-title">Internship Opportunity</h3>
+          <p class="why-card-desc">Get real-world cafe exposure with hands-on internship programs post-completion.</p>
+        </div>
+        <!-- 5 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="why-card-title">Certification</h3>
+          <p class="why-card-desc">Earn a industry-respected, verified certification that enhances your global employment prospects.</p>
+        </div>
+        <!-- 6 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="clock"></i>
+          </div>
+          <h3 class="why-card-title">Lifetime Support</h3>
+          <p class="why-card-desc">Once a student, always a student. Access our equipment for refresher practice sessions anytime.</p>
+        </div>
+        <!-- 7 -->
+        <div class="why-card card-lift">
+          <div class="why-icon-box">
+            <i data-lucide="compass"></i>
+          </div>
+          <h3 class="why-card-title">Job Guidance</h3>
+          <p class="why-card-desc">Leverage our active industry networking to find barista openings in top local and international establishments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Awesome Team -->
+  <section class="team-section" id="team">
+    <div class="section-container">
+      <div class="text-center-wrapper">
+        <span class="section-badge">Master Craftsmen</span>
+        <h2 class="section-title">Our Awesome Team</h2>
+        <p class="section-subtitle">Meet the industry professionals, trainers, and coordinators dedicated to your success at Koffee Hub.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team 1 -->
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGgepMJkqxpPR21un-cZi1xj8YK_oWsen30wzfAhtf9WH5ZZxXVnFCBA&s=10" alt="Bishwas" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Bishwas Chhetri</h3>
+            <span class="team-position">Ownor & Entrepreneur</span>
+            <p class="team-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas rerum minus maiores tenetur! Accusamus iure excepturi nemo velit tenetur nesciunt ipsam cumque necessitatibus quis saepe, dolores commodi harum asperiores!</p>
+          </div>
+        </div>
+
+
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="images/jimmi.jpg" alt="Jimmi" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Jimmi Gurung</h3>
+            <span class="team-position">Ownor & Head instructor</span>
+            <p class="team-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas rerum minus maiores tenetur! Accusamus iure excepturi nemo velit tenetur nesciunt ipsam cumque necessitatibus quis saepe, dolores commodi harum asperiores!</p>
+          </div>
+        </div>
+
+        
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/578784677_122107512507078101_8875546275283125067_n.jpg?stp=dst-jpg_tt6&cstp=mx720x988&ctp=s720x988&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1JFWuWcEHh4Q7kNvwE7R8mW&_nc_oc=Ado1hWDBtxEPkugRShcJv1BsPVgMy_enWNPZ_zJsxXBJm_Wl6O0qORATsD6naqLedt0&_nc_zt=23&_nc_ht=scontent.fbwa5-1.fna&_nc_gid=3HJst5YDa19t_LzjIbPDgg&_nc_ss=7b2a8&oh=00_AQCmj5q8RKPnY1bFyeBUmq2U1Ota0X4JqcNWBttURp338w&oe=6A5D5D4C" alt="Jimmi" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Krishna Kumal</h3>
+            <span class="team-position">Managing Director</span>
+            <p class="team-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas rerum minus maiores tenetur! Accusamus iure excepturi nemo velit tenetur nesciunt ipsam cumque necessitatibus quis saepe, dolores commodi harum asperiores!</p>
+          </div>
+        </div>
+
+        
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="images/juni.jpg" alt="Head Trainer" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Devi Rana</h3>
+            <span class="team-position">Senior Instructo</span>
+            <p class="team-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut mollitia vero distinctio nam ad consectetur harum. Voluptate consectetur est quam inventore eveniet fugiat reiciendis, eos mollitia possimus repudiandae animi.</p>
+          </div>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="images/lucky.jpg" alt="Training Coordinator" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Lucky Gharti</h3>
+            <span class="team-position">Head Barista & Supervisior</span>
+            <p class="team-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic pariatur fuga! Expedita, maiores id nesciunt, cumque alias ex non labore incidunt explicabo quis iste, libero temporibus ipsam deserunt ratione.</p>
+          </div>
+        </div>
+
+       
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRG14YjEgXQttMvzlcr7K5JSid1lhZrayXD8TgK_n04WIRhosmKCf_9KcG&s=10" alt="Cafe Manager" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Kavita Sharma</h3>
+            <span class="team-position">Junior Instructor</span>
+            <p class="team-bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium in accusamus amet at ad, quae quos adipisci sit quas voluptates nemo aliquam exercitationem asperiores magni! Odio explicabo quo libero animi.</p>
+          </div>
+        </div>
+
+
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRG14YjEgXQttMvzlcr7K5JSid1lhZrayXD8TgK_n04WIRhosmKCf_9KcG&s=10" alt="Cafe Manager" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Shristy Thapa</h3>
+            <span class="team-position">Junior Instructor</span>
+            <p class="team-bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium in accusamus amet at ad, quae quos adipisci sit quas voluptates nemo aliquam exercitationem asperiores magni! Odio explicabo quo libero animi.</p>
+          </div>
+        </div>
+
+
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGgepMJkqxpPR21un-cZi1xj8YK_oWsen30wzfAhtf9WH5ZZxXVnFCBA&s=10" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Bhuwan Thapa</h3>
+            <span class="team-position">Junior Instructor</span>
+            <p class="team-bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium in accusamus amet at ad, quae quos adipisci sit quas voluptates nemo aliquam exercitationem asperiores magni! Odio explicabo quo libero animi.</p>
+          </div>
+        </div>
+
+
+        <div class="team-card card-lift">
+          <div class="team-photo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGgepMJkqxpPR21un-cZi1xj8YK_oWsen30wzfAhtf9WH5ZZxXVnFCBA&s=10" alt="Cafe Manager" class="team-photo">
+            <div class="team-social-overlay">
+              <a href="#" class="team-social-icon" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="team-social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="team-details">
+            <h3 class="team-name">Shubham Gurung</h3>
+            <span class="team-position">Junior Instructor</span>
+            <p class="team-bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium in accusamus amet at ad, quae quos adipisci sit quas voluptates nemo aliquam exercitationem asperiores magni! Odio explicabo quo libero animi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-container">
+      <div class="text-center-wrapper">
+        <span class="section-badge">Life At Koffee Hub</span>
+        <h2 class="section-title">Academy Gallery</h2>
+        <p class="section-subtitle">Sneak peek into our active training batches, latte art contests, and intensive practical operations.</p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item-card">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Espresso extraction practice" class="gallery-img">
+          <div class="gallery-caption">Espresso Extraction Practice</div>
+        </div>
+        <div class="gallery-item-card">
+          <img src="https://images.unsplash.com/photo-1517256064527-09c53b2d0bc6?auto=format&fit=crop&w=600&q=80" alt="Pouring latte art" class="gallery-img">
+          <div class="gallery-caption">Latte Art Pouring</div>
+        </div>
+        <div class="gallery-item-card">
+          <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=600&q=80" alt="Hands-on training session" class="gallery-img">
+          <div class="gallery-caption">Hands-on Lab Training</div>
+        </div>
+        <div class="gallery-item-card">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Specialty drip brewing" class="gallery-img">
+          <div class="gallery-caption">Specialty Filter Brewing</div>
+        </div>
+        <div class="gallery-item-card">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" alt="Commercial espresso setups" class="gallery-img">
+          <div class="gallery-caption">Modern Commercial Setup</div>
+        </div>
+        <div class="gallery-item-card">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80" alt="Fresh coffee roasting basics" class="gallery-img">
+          <div class="gallery-caption">Understanding Coffee Beans</div>
+        </div>
+      </div>
+
+      <div class="text-center-wrapper mt-3">
+        <a href="/gallery.html">
+          <button class="btn btn-primary" id="galleryViewBtn">View Full Gallery</button>
+        </a>
+       </div>
+    </div>
+  </section>
+
+  <!-- Student Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-container">
+      <div class="text-center-wrapper">
+        <span class="section-badge">Success Stories</span>
+        <h2 class="section-title">What Our Students Say</h2>
+        <p class="section-subtitle">Real experiences shared by past graduates who started their careers and businesses with us.</p>
+      </div>
+
+      <!-- Testimonial Slider Wrapper -->
+      <div class="slider-wrapper">
+        <div class="slider-track" id="testimonialSlider">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-card">
+              <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"Koffee Hub Sunwal changed my entire perspective on coffee! The practical focus is insane. I am now working confidently as a head barista in Kathmandu, all thanks to the 7-day professional course."</p>
+              <div class="student-meta">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="Milan Thapa" class="student-avatar">
+                <div class="student-details">
+                  <h4 class="student-name">Milan Thapa</h4>
+                  <span class="student-course">Professional Barista Graduate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"I joined the Cafe Management course with zero hospitality background. The structured curriculum on inventory, costing, and staff handling gave me the ultimate confidence to open my own outlet in Sunwal!"</p>
+              <div class="student-meta">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Anjali Sen" class="student-avatar">
+                <div class="student-details">
+                  <h4 class="student-name">Anjali Sen</h4>
+                  <span class="student-course">Cafe Management Alumna</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"Outstanding instructors! They explain the science behind espresso extraction, milk chemistry, and sensory profiles in a super simple, friendly format. Highly recommended for absolute beginners."</p>
+              <div class="student-meta">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Roshan Gurung" class="student-avatar">
+                <div class="student-details">
+                  <h4 class="student-name">Roshan Gurung</h4>
+                  <span class="student-course">Basic Barista Graduate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn prev" id="sliderPrev" aria-label="Previous slide"><i data-lucide="chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn next" id="sliderNext" aria-label="Next slide"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Accordion) -->
+  <section class="faq-section" id="faq">
+    <div class="section-container">
+      <div class="text-center-wrapper">
+        <span class="section-badge">Common Inquiries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got questions? Find clear, straightforward answers about our training structure, certifications, and requirements.</p>
+      </div>
+
+      <div class="faq-accordion-container">
+        
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">How long is the training?</span>
+            <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body-wrapper">
+            <div class="faq-body-content">
+              <p>The training duration depends on the specific course you select. Our Basic Barista Course takes 20 Days, Special Advance Barista Course takes 45 Days, the AHA Prof. Diploma in Excellence takes 3 Months, and Latte Art Training spans 7 Days. We also offer fully customized training dates. Refresher practice hours are lifetime and flexible.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do I get certificate?</span>
+            <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body-wrapper">
+            <div class="faq-body-content">
+              <p>Yes, absolutely! Upon successful completion of any of our training modules and passing the practical assessment, you will receive a professionally signed, industry-accepted certificate from Koffee Hub Sunwal. Our certificates are recognized both locally in Nepal and globally.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do I need experience?</span>
+            <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body-wrapper">
+            <div class="faq-body-content">
+              <p>No prior culinary, coffee, or hospitality experience is required! Our Basic Barista Course is specifically tailored for absolute beginners. We teach you from scratch—starting from how to handle a portafilter safely to milk pouring fundamentals.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Can I start my own cafe?</span>
+            <span class="faq-toggle-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body-wrapper">
+            <div class="faq-body-content">
+              <p>Yes! Our academic portfolio offers robust preparation for entrepreneurs. Both our Special Advance Barista Course (45 Days) and our AHA Prof. Diploma in Excellence (3 Months) are designed to provide candidates with essential management foundations, financial calculations, menu planning, stock controls, and restaurant standard guidelines.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action Section -->
+  <section class="cta-section">
+    <div class="cta-bg-overlay"></div>
+    <div class="cta-content-container">
+      <h2 class="cta-title">Ready to Become a Professional Barista?</h2>
+      <p class="cta-subtitle">Don't miss the chance to learn the true art of espresso extraction and specialty brewing. Secure your seat in our upcoming batch today!</p>
+      <button class="btn btn-secondary btn-lg ripple-effect open-booking-btn" data-preset-course="all">Book Your Seat Today</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-layout">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col-desc">
+        <div class="footer-logo-row">
+          <a href="#">
+          <img src="/images/logo.png" alt="Koffee HUB Sunwal" class="footer-logo-img">
+          </a>
+          X 
+          <img src="images/coffeoclocklogo.png" alt="Koffee HUB Sunwal" class="footer-logo-img2">
+        </div>
+        <p class="footer-brand-p">Creating luxury second-home environments, marrying single-origin precision brewing with world-class spatial comfort.</p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div>
+        <h3 class="footer-heading">Navigations</h3>
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Story</a></li>
+          <li><a href="/menu.html">Craft Catalog</a></li>
+          <li><a href="/gallery.html">Visual Gallery</a></li>
+          <li><a href="/experience.html">The Coffee Journey</a></li>
+          <li><a href="/courses.html">Courses Academy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Social & Communities -->
+      <div>
+        <h3 class="footer-heading">Connect With Us</h3>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/p/Koffee-HUB-Sunwal-100027303412881/" target="_blank">Facebook Space</a></li>
+          <li><a href="https://www.instagram.com/koffeehubsunwal/" target="_blank">Instagram Visuals</a></li>
+          <li><a href="https://maps.app.goo.gl/vTeox2EkM3HHREE3A" target="_blank">Google Pin Spot</a></li>
+          <li><a href="mailto:koffeehub4@gmail.com">E-mail </a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Opening Hours -->
+      <div>
+        <h3 class="footer-heading">Bespoke Hours</h3>
+        <ul class="hours-list">
+          <li class="hours-item">
+            <span>Sunday – Friday</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span>Saturdays</span>
+            <span>7:00 AM – 10:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span>Public Holidays</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Copyright row -->
+    <div class="footer-bottom">
+      <div>&copy; 2026 Koffee HUB Sunwal. Made with ❤ by <a href="https://parbhumahatchhetry.com.np" style="text-decoration: none; color: whitesmoke;">Prabhu.</a></div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+
+  <!-- MODAL 1: VIEW COURSE DETAILS (DYNAMIC POPUP) -->
+  <div class="modal-overlay" id="viewCourseModal">
+    <div class="modal-window modal-lg animate-scale">
+      <button class="modal-close-btn" id="closeViewModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-scroll-body" id="viewModalBody">
+        <!-- Content will be dynamically populated via courses.js -->
+        <div class="modal-skeleton">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text-half"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL 2: BOOK COURSE FORM -->
+  <div class="modal-overlay" id="bookCourseModal">
+    <div class="modal-window modal-md animate-scale">
+      <button class="modal-close-btn" id="closeBookModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-scroll-body">
+        <div class="book-modal-header">
+          <span class="book-badge">Reserve Your Seat</span>
+          <h3 class="book-modal-title">Book Your Course</h3>
+          <p class="book-modal-subtitle">Submit this reservation form, and our training coordinator will contact you within 24 hours to confirm your schedule.</p>
+        </div>
+
+        <div class="booking-grid-layout">
+          <!-- Form Panel -->
+          <form class="booking-form" id="bookingForm" novalidate>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="fullName" class="form-control" placeholder="Ram Bahadur" required>
+                </div>
+                <div class="error-msg" id="fullNameError">Please enter your full name.</div>
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="phone" class="input-icon"></i>
+                  <input type="tel" id="phoneNumber" class="form-control" placeholder="98570XXXXX" required>
+                </div>
+                <div class="error-msg" id="phoneNumberError">Please enter a valid Nepalese phone number.</div>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="mail" class="input-icon"></i>
+                  <input type="email" id="email" class="form-control" placeholder="example@mail.com" required>
+                </div>
+                <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label for="address">Current Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="map-pin" class="input-icon"></i>
+                  <input type="text" id="address" class="form-control" placeholder="Sunwal-4, Nawalparasi" required>
+                </div>
+                <div class="error-msg" id="addressError">Please enter your address.</div>
+              </div>
+            </div>
+
+            
+              <div class="form-group">
+                <label for="interestedCourse">Interested Course <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="book-open" class="input-icon"></i>
+                  <select id="interestedCourse" class="form-control" required>
+                    <option value="" disabled selected>-- Select a Course --</option>
+                    <option value="basic-barista">Basic Barista Course (20 Days)</option>
+                    <option value="special-advance-barista">Special Advance Barista Course (45 Days)</option>
+                    <option value="diploma-excellence">AHA Prof. Diploma in Excellence (3 Months)</option>
+                    <option value="latte-art">Latte Art Training Course (7 Days)</option>
+                    <option value="customize-barista">Customize Barista Training (Flexible / Custom)</option>
+                  </select>
+                </div>
+                <div class="error-msg" id="courseError">Please select a course.</div>
+              </div>
+            
+
+            <div class="form-group">
+              <label for="userMessage">Additional Message / Special Request</label>
+              <div class="input-wrapper">
+                <textarea id="userMessage" class="form-control text-area" rows="3" placeholder="Tell us about your background or custom batch requests..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-buttons">
+              <button type="submit" class="btn btn-primary" id="submitBookingBtn">Submit Booking</button>
+              <button type="reset" class="btn btn-ghost" id="resetBookingBtn">Reset Form</button>
+            </div>
+          </form>
+
+          <!-- Contact Details and Info inside Booking Modal -->
+          <div class="booking-contact-info">
+            <h4 class="info-sidebar-title">Contact Information</h4>
+            
+            <div class="info-sidebar-item">
+              <i data-lucide="phone"></i>
+              <div>
+                <h5>Phone Queries</h5>
+                <p>+977-9743498077</p>
+              </div>
+            </div>
+
+            <div class="info-sidebar-item">
+              <i data-lucide="mail"></i>
+              <div>
+                <h5>Email Support</h5>
+                <p>koffeehub4@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-sidebar-item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <h5>Physical Academy</h5>
+                <p>Sunwal 1, Nawalparasi (Near Radio Sunwal)</p>
+              </div>
+            </div>
+
+            <div class="info-sidebar-item">
+              <i data-lucide="clock"></i>
+              <div>
+                <h5>Business Hours</h5>
+                <p>Sun - Fri: 7:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL 3: SUCCESS FEEDBACK -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-window modal-sm text-center p-3 animate-scale">
+      <div class="success-icon-badge">
+        <i data-lucide="check-circle" class="success-icon"></i>
+      </div>
+      <h3 class="success-modal-title mt-2">Seat Reserved Successfully!</h3>
+      <p class="success-modal-desc mt-1">Thank you for booking with Koffee Hub Sunwal. Our coordinator has received your request and will contact you via phone or email within 24 hours.</p>
+      
+      <div class="booking-summary-box mt-2 text-left" id="bookingSummaryBox">
+        <!-- populated dynamically via courses.js -->
+      </div>
+
+      <button class="btn btn-primary mt-2" id="closeSuccessModalBtn">Got it, Thanks!</button>
+    </div>
+  </div>
+
+  <!-- Lucide CDN Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Global & Local Scripts -->
+  <script type="module" src="/js/script.js" defer></script>
+  <script type="module" src="/js/courses.js" defer></script>
+</body>
+</html>
